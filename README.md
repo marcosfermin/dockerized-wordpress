@@ -70,7 +70,7 @@ Use the provided cron script:
 ### Setup System Cron (macOS/Linux)
 Add to your crontab (`crontab -e`):
 ```
-*/15 * * * * cd /Users/marcosfermin/scripts/sexovisual-site && ./scripts/cron.sh
+*/15 * * * * cd /Users/marcosfermin/scripts/dockerized-wordpress && ./scripts/cron.sh
 ```
 
 ### View Scheduled Cron Events
