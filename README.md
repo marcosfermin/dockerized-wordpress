@@ -5,7 +5,7 @@ A complete WordPress development environment with Docker, providing direct acces
 ## Structure
 
 ```
-sexovisual-site/
+dockerized-wordpress/
 ├── docker-compose.yml
 ├── config/
 │   └── php.ini
