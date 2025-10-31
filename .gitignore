@@ -1,0 +1,23 @@
+# WordPress files
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# WordPress config (contains sensitive data)
+config/wp-config.php
+
+# Logs
+*.log
+cron.log
+
+# Database backups
+*.sql
+*.sql.gz
+
+# macOS
+.DS_Store
+
+# Environment
+.env
