@@ -34,6 +34,10 @@ services:
       - ./wp-content/uploads:/var/www/html/wp-content/uploads
       # Custom PHP configuration
       - ./config/php.ini:/usr/local/etc/php/conf.d/custom.ini
+      # Entrypoint wrapper for permissions fix
+      - ./scripts/docker-entrypoint-wrapper.sh:/usr/local/bin/docker-entrypoint-wrapper.sh:ro
+    entrypoint: ["/usr/local/bin/docker-entrypoint-wrapper.sh"]
+    command: ["apache2-foreground"]
     depends_on:
       - db
     networks:
